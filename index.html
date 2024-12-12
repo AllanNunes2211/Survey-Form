@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Development Survey</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 id="title">Personal Growth Survey</h1>
+        <p id="description">Help us understand your learning and development journey</p>
+        
+        <form id="survey-form">
+            <div class="form-group">
+                <label for="name" id="name-label">Name</label>
+                <input 
+                    type="text" 
+                    id="name" 
+                    name="name" 
+                    placeholder="Enter your full name" 
+                    required
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="email" id="email-label">Email</label>
+                <input 
+                    type="email" 
+                    id="email" 
+                    name="email" 
+                    placeholder="Enter your email address" 
+                    required
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="number" id="number-label">Age (optional)</label>
+                <input 
+                    type="number" 
+                    id="number" 
+                    name="age" 
+                    min="13" 
+                    max="120" 
+                    placeholder="Enter your age"
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="dropdown">What is your current role?</label>
+                <select id="dropdown" name="current-role" required>
+                    <option value="" disabled selected>Select your current role</option>
+                    <option value="student">Student</option>
+                    <option value="professional">Professional</option>
+                    <option value="entrepreneur">Entrepreneur</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <p>How likely are you to recommend continuous learning?</p>
+                <div class="radio-group">
+                    <label>
+                        <input 
+                            type="radio" 
+                            name="recommend" 
+                            value="definitely" 
+                            checked
+                        > Definitely
+                    </label>
+                    <label>
+                        <input 
+                            type="radio" 
+                            name="recommend" 
+                            value="maybe"
+                        > Maybe
+                    </label>
+                    <label>
+                        <input 
+                            type="radio" 
+                            name="recommend" 
+                            value="not-likely"
+                        > Not Likely
+                    </label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <p>What areas would you like to improve? (Check all that apply)</p>
+                <div class="checkbox-group">
+                    <label>
+                        <input 
+                            type="checkbox" 
+                            name="improvements" 
+                            value="technical-skills"
+                        > Technical Skills
+                    </label>
+                    <label>
+                        <input 
+                            type="checkbox" 
+                            name="improvements" 
+                            value="soft-skills"
+                        > Soft Skills
+                    </label>
+                    <label>
+                        <input 
+                            type="checkbox" 
+                            name="improvements" 
+                            value="time-management"
+                        > Time Management
+                    </label>
+                    <label>
+                        <input 
+                            type="checkbox" 
+                            name="improvements" 
+                            value="communication"
+                        > Communication
+                    </label>
+                    <label>
+                        <input 
+                            type="checkbox" 
+                            name="improvements" 
+                            value="leadership"
+                        > Leadership
+                    </label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="comments">Additional Comments or Suggestions</label>
+                <textarea 
+                    id="comments" 
+                    name="comments" 
+                    rows="4" 
+                    placeholder="Share your thoughts..."
+                ></textarea>
+            </div>
+
+            <div class="form-group">
+                <input 
+                    type="submit" 
+                    id="submit" 
+                    value="Submit Survey"
+                >
+            </div>
+        </form>
+    </div>
+</body>
+</html>
